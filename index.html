@@ -1,196 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechStore - Cửa hàng công nghệ hàng đầu Việt Nam</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./css.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Cửa hàng công nghệ hàng đầu Việt Nam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header-wrapper">
+        <div class="menu-logo">🛒 TechStore</div>
 
-  <!-- Header -->
-  <div class="header">
-    <div class="header-wrapper">
-      <div class="menu-logo">🛒 TechStore</div>
+        <div class="menu">
+          <div class="menu-item">Trang chủ</div>
+          <div class="menu-item">Sản phẩm</div>
+          <div class="menu-item">Giới thiệu</div>
+          <div class="menu-item">Dịch vụ</div>
+          <div class="menu-item">Liên hệ</div>
+        </div>
 
-      <div class="menu">
-        <div class="menu-item">Trang chủ</div>
-        <div class="menu-item">Sản phẩm</div>
-        <div class="menu-item">Giới thiệu</div>
-        <div class="menu-item">Dịch vụ</div>
-        <div class="menu-item">Liên hệ</div>
-      </div>
+        <div class="header-right">
+          <div class="search-box">
+            <span class="search-box-icon">
+              <!-- Search icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search absolute left-3 top-2.5 h-4 w-4 text-gray-400"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </span>
+            <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+          </div>
 
-      <div class="header-right">
-        <div class="search-box">
-          <span class="search-box-icon">
-            <!-- Search icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-search absolute left-3 top-2.5 h-4 w-4 text-gray-400">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.3-4.3"></path>
+          <div class="shopping-card">
+            <!-- Cart icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart h-5 w-5"
+            >
+              <circle cx="8" cy="21" r="1"></circle>
+              <circle cx="19" cy="21" r="1"></circle>
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              ></path>
             </svg>
-          </span>
-          <input type="text" placeholder="Tìm kiếm sản phẩm..." />
-        </div>
-
-        <div class="shopping-card">
-          <!-- Cart icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-shopping-cart h-5 w-5">
-            <circle cx="8" cy="21" r="1"></circle>
-            <circle cx="19" cy="21" r="1"></circle>
-            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-          </svg>
-          <span class="count-cart">3</span>
+            <span class="count-cart">3</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Banner -->
-  <div class="banner">
-    <div class="banner-content">
-      <h1 class="heading">Công Nghệ Hàng Đầu</h1>
-      <p>Khám phá bộ sưu tập sản phẩm công nghệ mới nhất với giá cả tốt nhất thị trường</p>
-    </div>
-    <div class="banner-btn">
-      <button class="buy">Mua Ngay</button>
-      <button class="look">Tìm Hiểu Thêm</button>
-    </div>
-  </div>
-
-  <!-- Featured Products Section -->
-  <div class="section">
-    <div class="section-content">
-      <h2>Sản Phẩm Nổi Bật</h2>
-      <p class="text">Những sản phẩm được yêu thích nhất tại TechStore</p>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1 class="heading">Công Nghệ Hàng Đầu</h1>
+        <p>
+          Khám phá bộ sưu tập sản phẩm công nghệ mới nhất với giá cả tốt nhất
+          thị trường
+        </p>
+      </div>
+      <div class="banner-btn">
+        <button class="buy">Mua Ngay</button>
+        <button class="look">Tìm Hiểu Thêm</button>
+      </div>
     </div>
 
-    <div class="product-list">
-      <!-- iPhone Product -->
-      <div class="product">
-        <div class="product-icon">📱</div>
-        <div class="product-text">
-          <p class="product-name">iPhone 15 Pro Max</p>
-          <p class="product-infor">Điện thoại thông minh cao cấp với chip A17 Pro mạnh mẽ</p>
-          <div class="product-evaluate">
-            <div class="stars">
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill star-none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    <div class="section" id="section-product">
+      <div class="section-content">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <p class="text">Những sản phẩm được yêu thích nhất tại TechStore</p>
+      </div>
+
+      <div class="product-list">
+        <!-- iPhone Product -->
+        <div class="product">
+          <div class="product-icon">📱</div>
+          <div class="product-text">
+            <p class="product-name">iPhone 15 Pro Max</p>
+            <p class="product-infor">
+              Điện thoại thông minh cao cấp với chip A17 Pro mạnh mẽ
+            </p>
+            <div class="product-evaluate">
+              <div class="stars">
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill star-none" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <p class="quantity">(1250)</p>
             </div>
-            <p class="quantity">(1250)</p>
-          </div>
-          <div class="price">
-            <p class="sale-price">29.990.000 ₫</p>
-            <p class="original-price">32.990.000 ₫</p>
-          </div>
-          <div class="atc-btn">
-            <svg class="product-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-            <button class="btn-buy">Thêm vào giỏ</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- MacBook Product -->
-      <div class="product">
-        <div class="product-icon">💻</div>
-        <div class="product-text">
-          <p class="product-name">MacBook Pro M3</p>
-          <p class="product-infor">Laptop chuyên nghiệp với hiệu năng đột phá</p>
-          <div class="product-evaluate">
-            <div class="stars">
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div class="price">
+              <p class="sale-price">29.990.000 ₫</p>
+              <p class="original-price">32.990.000 ₫</p>
             </div>
-            <p class="quantity">(980)</p>
-          </div>
-          <div class="price">
-            <p class="sale-price">39.990.000 ₫</p>
-            <p class="original-price">45.990.000 ₫</p>
-          </div>
-          <div class="atc-btn">
-            <svg class="product-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-            <button class="btn-buy">Thêm vào giỏ</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- iPad Product -->
-      <div class="product">
-        <div class="product-icon">📱</div>
-        <div class="product-text">
-          <p class="product-name">iPad Pro M2</p>
-          <p class="product-infor">Máy tính bảng chuyên nghiệp cho công việc sáng tạo</p>
-          <div class="product-evaluate">
-            <div class="stars">
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill star-none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div class="atc-btn">
+              <svg class="product-shopping-cart" viewBox="0 0 24 24">
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+              <button class="btn-buy">Thêm vào giỏ</button>
             </div>
-            <p class="quantity">(756)</p>
-          </div>
-          <div class="price">
-            <p class="sale-price">24.990.000 ₫</p>
-            <p class="original-price">27.990.000 ₫</p>
-          </div>
-          <div class="atc-btn">
-            <svg class="product-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-            <button class="btn-buy">Thêm vào giỏ</button>
           </div>
         </div>
-      </div>
 
-      <!-- AirPods Product -->
-      <div class="product">
-        <div class="product-icon">🎧</div>
-        <div class="product-text">
-          <p class="product-name">AirPods Pro 2</p>
-          <p class="product-infor">Tai nghe không dây cao cấp với chống ồn chủ động</p>
-          <div class="product-evaluate">
-            <div class="stars">
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="star-fill star-none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <!-- MacBook Product -->
+        <div class="product">
+          <div class="product-icon">💻</div>
+          <div class="product-text">
+            <p class="product-name">MacBook Pro M3</p>
+            <p class="product-infor">
+              Laptop chuyên nghiệp với hiệu năng đột phá
+            </p>
+            <div class="product-evaluate">
+              <div class="stars">
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <p class="quantity">(980)</p>
             </div>
-            <p class="quantity">(523)</p>
+            <div class="price">
+              <p class="sale-price">39.990.000 ₫</p>
+              <p class="original-price">45.990.000 ₫</p>
+            </div>
+            <div class="atc-btn">
+              <svg class="product-shopping-cart" viewBox="0 0 24 24">
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+              <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
           </div>
-          <div class="price">
-            <p class="sale-price">6.990.000 ₫</p>
-            <p class="original-price">7.990.000 ₫</p>
+        </div>
+
+        <!-- iPad Product -->
+        <div class="product">
+          <div class="product-icon">📱</div>
+          <div class="product-text">
+            <p class="product-name">iPad Pro M2</p>
+            <p class="product-infor">
+              Máy tính bảng chuyên nghiệp cho công việc sáng tạo
+            </p>
+            <div class="product-evaluate">
+              <div class="stars">
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill star-none" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <p class="quantity">(756)</p>
+            </div>
+            <div class="price">
+              <p class="sale-price">24.990.000 ₫</p>
+              <p class="original-price">27.990.000 ₫</p>
+            </div>
+            <div class="atc-btn">
+              <svg class="product-shopping-cart" viewBox="0 0 24 24">
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+              <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
           </div>
-          <div class="atc-btn">
-            <svg class="product-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-            <button class="btn-buy">Thêm vào giỏ</button>
+        </div>
+
+        <!-- AirPods Product -->
+        <div class="product">
+          <div class="product-icon">🎧</div>
+          <div class="product-text">
+            <p class="product-name">AirPods Pro 2</p>
+            <p class="product-infor">
+              Tai nghe không dây cao cấp với chống ồn chủ động
+            </p>
+            <div class="product-evaluate">
+              <div class="stars">
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <svg class="star-fill star-none" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <p class="quantity">(523)</p>
+            </div>
+            <div class="price">
+              <p class="sale-price">6.990.000 ₫</p>
+              <p class="original-price">7.990.000 ₫</p>
+            </div>
+            <div class="atc-btn">
+              <svg class="product-shopping-cart" viewBox="0 0 24 24">
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+              <button class="btn-buy">Thêm vào giỏ</button>
+            </div>
           </div>
         </div>
       </div>
-    </div> <!-- product-list -->
-    
-    <div class="view-all">
-      <button class="view-all-btn">Xem tất cả sản phẩm</button>
+      
+
+      <div class="view-all">
+        <button class="view-all-btn">Xem tất cả sản phẩm</button>
+      </div>
     </div>
-  </div> <!-- section -->
 
-</body>
+    <div class="section1" id="about-us"></div>
+    <div class="section1">
+      <div class="section1-content">
+        <div class="section1-text">
+          <h2>Về TechStore</h2>
+          <div class="section1-textgray">
+             Với hơn 10 năm kinh nghiệm trong lĩnh vực công nghệ, TechStore tự
+          hào là địa chỉ tin cậy hàng đầu cho những sản phẩm công nghệ chất
+          lượng cao.
+          </div>
+          <div class="section1-textgray">
+            Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chính hãng,
+          giá cả cạnh tranh và dịch vụ hậu mãi tốt nhất.
+          </div>
+          <div class="section1-textgray section1-graytext-final">
+            Đội ngũ nhân viên chuyên nghiệp, nhiệt tình luôn sẵn sàng tư vấn và
+          hỗ trợ khách hàng 24/7.
+          </div>
+          <div class="contact-btn">
+            Liên Hệ Ngay
+          </div>
+        </div>
+        <div class="section1-icon">🏪</div>
+      </div>
+    </div>
+  </body>
 </html>
